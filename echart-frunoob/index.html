@@ -1,19 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>可视化界面</title>
     <link rel="stylesheet" href="./css/main.css">
-	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/frunoob/Library@master/echart/echart/css/index.css" />
-    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/frunoob/images@latest/blog/favicon.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/frunoob/Library@master/echart/echart/css/index.css" /> -->
+    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/frunoob/images@latest/blog/favicon.png"
+        type="image/x-icon">
     <link rel="icon" href="https://cdn.jsdelivr.net/gh/frunoob/images@latest/blog/favicon.png" type="image/x-icon">
-  
+
 </head>
+
 <body>
+    <!-- 设置页眉 -->
         <header>
-            <h1>数据可视化</h1>
+            <h1>数据可视化-frunoob</h1>
         </header>
-    
+
+    <!-- 页面主题部分 划分为三等份 -->
+    <section class="mainbox">
+        <!-- 左侧盒子 -->
+        <div class="column">
+            <!-- 左侧 上半部大盒子 显示大型图表 -->
+            <h2>地图</h2>
+                <!-- 地图 -->
+                <div class="maps"></div>
+            <div class="panel left">
+                display
+                <div class="panel-bg"></div>
+                <div class="panel-footer"></div>
+            </div>
+        </div>
+        <!-- 右1盒子 -->
+        <div class="column">
+            <div class="panel right11 ">
+                <div class="panel-bg"></div>
+                <div class="panel-footer"></div>
+            </div>
+            <div class="panel right12 ">
+                <div class="panel-bg"></div>
+                <div class="panel-footer"></div>
+            </div>
+            <div class="panel right13 ">
+                <div class="panel-bg"></div>
+                <div class="panel-footer"></div>
+            </div>
+        </div>
+        </div>
+        
+        <!-- 右2盒子 -->
+        <div class="column">
+            <div class="panel right21 ">
+                <div class="panel-bg"></div>
+                <div class="panel-footer"></div>
+            </div>
+            <div class="panel right22 ">
+                <div class="panel-bg"></div>
+                <div class="panel-footer"></div>
+            </div>
+            <div class="panel right23 ">
+                <div class="panel-bg"></div>
+                <div class="panel-footer"></div>
+            </div>
+        </div>
+        <!-- 右3盒子 -->
+        <div class="column">
+            <div class="panel right31">
+                <div class="panel-bg"></div>
+                <div class="panel-footer"></div>
+            </div>
+            <div class="panel right32">
+                <div class="panel-bg"></div>
+                <div class="panel-footer"></div>
+            </div>
+            <div class="panel right33">
+                <div class="panel-bg"></div>
+                <div class="panel-footer"></div>
+            </div>           
+        </div>
+    </section>
+<script src="https://cdn.jsdelivr.net/gh/frunoob/Library@0.0.1/echart/echart/js/echarts.min.js"></script>
+<script src="./scripts/main.js"></script>
 </body>
+
 </html>
