@@ -11,15 +11,14 @@
   src: url(https://cdn.jsdelivr.net/gh/frunoob/Library@0.0.1/echart/echart/font/DS-DIGIT.TTF);
 }
 
-html{
+html,body{
     height: 100%;/* 设置背景全屏必须设置此项为100% */
 }
 body {
     /* 设置页面背景 */
     background: border-box url(../img/body-bg.png) 
     no-repeat top center;/* 图片不重复 顶部 居中放大100% */
-    height: 100%;/* 设置背景全屏必须设置此项为100% */
-    background-size: 100% 100%;/* 设置背景拉伸为全屏 */
+    background-size: 1920px 1080px;/* 设置背景拉伸为全屏 */
 }
 /* 页眉 */
   header{
@@ -54,7 +53,7 @@ body {
     margin: 0 auto;
     padding: 0.125rem ;/* 设置内边框 */
     .column{ /* 所有盒子占2份 */
-        flex:2;
+        flex: 2;
         // 盒子外边距: 上边距为0，左右下边距为3px
         margin: 0 0.0375rem 0.125rem;
         // 盒子内标题
@@ -66,17 +65,8 @@ body {
           font-size: 1rem;
           font-weight: 400;
       }
-        /* maps面板的高度 */
-        .maps{
-          height: 11.55rem;
-        }
-        /* 设置左侧面板高度 */
-        .panel.left{
-          height: 2.5rem;
-
-        }
     }
-    .column:nth-child(1){/* 第1个盒子占4份 */
+    .column:nth-child(2){/* 第1个盒子占4份 */
         flex: 4;
         /* 设置左盒子右和下边距为15px 上和左边距为0 */
         margin: 0 0.1875rem 0.1875rem 0;
@@ -160,19 +150,13 @@ body {
             font-size: 0.25rem;
             font-weight: 400;
         } 
-        // 设置面板内图标的样式
-        .chart{
-            height: 3rem;
-            border-color: blue;
-        }
 
     }
-
-
 }
 .maps{
   position: relative;
-  height: 5rem;
+  /* maps面板的高度 */
+  height: 11.20rem;
   border: 1px solid rgba(25, 186, 139, 0.17);
   padding: 0 0.1875rem 0.5rem; /* 保证内容在中间 */
   margin-bottom: 0.1875rem;
@@ -200,4 +184,13 @@ body {
     border-right: 2px solid #02a6b5;
     }
 }
-
+/* 中间顶部面板 */
+.middle.top{
+  height: 1.25rem;
+  box-shadow: 0px 0px 12px #000000a8;
+  margin-bottom: 5px;
+}
+/* 中间底部面板 */
+.middle.bottom{
+  height: 2.5rem;
+}
