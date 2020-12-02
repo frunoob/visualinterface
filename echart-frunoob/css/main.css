@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 html,
 body {
@@ -13,13 +14,13 @@ body {
   /* 设置页面背景 */
   background: url(../img/body-bg.png) no-repeat top center;
   /* 图片不重复 顶部 居中放大100% */
-  background-size: 100% 110%;
+  background-size: 100% 100%;
   /* 设置背景拉伸为全屏 */
 }
 /* 页眉 */
 header {
   position: relative;
-  height: 1.875rem;
+  height: 3.875rem;
 }
 header::before {
   content: "";
@@ -37,11 +38,11 @@ header::before {
 header h1 {
   color: #ffffff;
   /* 颜色设置为白色 */
-  font-size: 2rem;
+  font-size: 4rem;
   font-family: xiaokang;
   text-align: center;
   /* 居中类型 */
-  transform: translateY(-0.5625rem);
+  transform: translateY(-1rem);
 }
 /* 设置字体 */
 @font-face {
@@ -101,63 +102,17 @@ header h1 {
   margin-bottom: 0.1875rem;
   /* 设置右下角和左下角的直角边框效果 */
 }
-.mainbox .panel::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
-  width: 10px;
-  height: 10px;
-  border-top: 2px solid #02a6b5;
-  border-left: 2px solid #02a6b5;
-}
-.mainbox .panel::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  content: "";
-  width: 10px;
-  height: 10px;
-  border-top: 2px solid #02a6b5;
-  border-right: 2px solid #02a6b5;
-}
 .mainbox .panel .panel-bg {
   z-index: -1;
   position: absolute;
-  left: 0px;
+  left: -9px;
   right: 0px;
-  top: 0px;
-  bottom: 0px;
-  background: url(../img/panel-bg.jpg);
+  top: -57px;
+  bottom: -81px;
+  background: url(../img/panel-bg2.png);
   background-size: 100% 100%;
-  opacity: 0.5;
+  opacity: 5;
   margin: auto;
-}
-.mainbox .panel .panel-footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
-.mainbox .panel .panel-footer::before {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  content: "";
-  width: 10px;
-  height: 10px;
-  border-bottom: 2px solid #02a6b5;
-  border-left: 2px solid #02a6b5;
-}
-.mainbox .panel .panel-footer::after {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  content: "";
-  width: 10px;
-  height: 10px;
-  border-bottom: 2px solid #02a6b5;
-  border-right: 2px solid #02a6b5;
 }
 .mainbox .panel h2 {
   height: 0.6rem;

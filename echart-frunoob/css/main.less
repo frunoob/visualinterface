@@ -3,6 +3,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    overflow: hidden;
 }
 
 
@@ -14,12 +15,12 @@ body {
     /* 设置页面背景 */
     background: url(../img/body-bg.png) 
     no-repeat top center;/* 图片不重复 顶部 居中放大100% */
-    background-size: 100% 110%;/* 设置背景拉伸为全屏 */
+    background-size: 100% 100%;/* 设置背景拉伸为全屏 */
 }
 /* 页眉 */
   header{
     position: relative;
-    height: 1.875rem;
+    height: 3.875rem;
     &::before{
       content: "";
       background-image: url(../img/panel-bg.jpg);
@@ -36,10 +37,10 @@ body {
     h1 {
 
         color: #ffffff;/* 颜色设置为白色 */
-        font-size: 2rem;
+        font-size: 4rem;
         font-family: xiaokang;
         text-align: center; /* 居中类型 */
-        transform: translateY(-0.5625rem);
+        transform: translateY(-1rem);
     }
 }
 /* 设置字体 */
@@ -92,70 +93,70 @@ body {
         border: 1px solid rgba(25, 186, 139, 0.17);
         padding: 0 0.1875rem 0.5rem; /* 保证内容在中间 */
         margin-bottom: 0.1875rem;
-        // 左上角
-        &::before {
-            position: absolute;
-            top: 0;
-            left: 0;
-            content: "";
-            width: 10px;
-            height: 10px;
-            border-top: 2px solid #02a6b5;
-            border-left: 2px solid #02a6b5;
-          }
-        //   右上角
-          &::after {
-            position: absolute;
-            top: 0;
-            right: 0;
-            content: "";
-            width: 10px;
-            height: 10px;
-            border-top: 2px solid #02a6b5;
-            border-right: 2px solid #02a6b5;
-          }
+        // // 左上角
+        // &::before {
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     content: "";
+        //     width: 10px;
+        //     height: 10px;
+        //     border-top: 2px solid #02a6b5;
+        //     border-left: 2px solid #02a6b5;
+        //   }
+        // //   右上角
+        //   &::after {
+        //     position: absolute;
+        //     top: 0;
+        //     right: 0;
+        //     content: "";
+        //     width: 10px;
+        //     height: 10px;
+        //     border-top: 2px solid #02a6b5;
+        //     border-right: 2px solid #02a6b5;
+        //   }
           // 设置panel背景
           .panel-bg{
             z-index: -1;
             position: absolute;
-            left: 0px;
+            left: -9px;
             right: 0px;
-            top: 0px;
-            bottom: 0px;
-            background: url(../img/panel-bg.jpg) ;
+            top: -57px;
+            bottom: -81px;
+            background: url(../img/panel-bg2.png) ;
             background-size: 100% 100%;
-            opacity: 0.5;
+            opacity: 5;
             margin: auto;
           }
           /* 设置右下角和左下角的直角边框效果 */
-          .panel-footer {
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            // 左下角
-            &::before {
-              position: absolute;
-              bottom: 0;
-              left: 0;
-              content: "";
-              width: 10px;
-              height: 10px;
-              border-bottom: 2px solid #02a6b5;
-              border-left: 2px solid #02a6b5;
-            }
-            // 右下角
-            &::after {
-              position: absolute;
-              bottom: 0;
-              right: 0;
-              content: "";
-              width: 10px;
-              height: 10px;
-              border-bottom: 2px solid #02a6b5;
-              border-right: 2px solid #02a6b5;
-            }
-          }
+          // .panel-footer {
+          //   position: absolute;
+          //   left: 0;
+          //   bottom: 0;
+          //   width: 100%;
+          //   // 左下角
+          //   &::before {
+          //     position: absolute;
+          //     bottom: 0;
+          //     left: 0;
+          //     content: "";
+          //     width: 10px;
+          //     height: 10px;
+          //     border-bottom: 2px solid #02a6b5;
+          //     border-left: 2px solid #02a6b5;
+          //   }
+          //   // 右下角
+          //   &::after {
+          //     position: absolute;
+          //     bottom: 0;
+          //     right: 0;
+          //     content: "";
+          //     width: 10px;
+          //     height: 10px;
+          //     border-bottom: 2px solid #02a6b5;
+          //     border-right: 2px solid #02a6b5;
+          //   }
+          // }
             // 设置每个面板内标题的样式
           h2{
             height: 0.6rem;
